@@ -1,14 +1,11 @@
-import Form from "./components/Form/Form";
-import NavBar from "./components/Navbar/Navbar";
-import Container from "./styles/GlobalStyle";
+import { Home } from "./pages/Home/Home";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
     <>
-    <NavBar />
-    <Container>
-      <Form />
-    </Container>
+      <Home />
+      <ToastContainer autoClose={1500}/>
     </>
   );
 }

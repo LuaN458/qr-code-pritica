@@ -1,19 +1,46 @@
 import styled from "styled-components";
+import { secondaryColor } from './colors';
 
 
 const Container = styled.main`
-    max-width: 50%;
+    max-width: 30%;
     height: 500px;
     margin: 100px auto;
-    border: 2px red solid;
+    border: 2px pink solid;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 5px black;
 
-    #m {
-      background-color: blue;
+    h2 {
+      position: relative;
+      top: -25px;
+    }
+
+    p {
+      position: relative;
+      top: -20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    button {
+      width: 200px;
+      height: 65px;
+      padding: 5px;
+      background-color: #2792adff;
+      border: none;
+      position: relative;
+      top: 50px;
+      transition: 500ms ease-in-out all;
+      border-radius: 5px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white;
+    }
+
+    button:hover {
+      background-color: red;
     }
 `;
 
