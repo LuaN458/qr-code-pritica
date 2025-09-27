@@ -26,13 +26,13 @@ const Container = styled.main`
     }
 
     button {
-      width: 200px;
+      width: 170px;
       height: 65px;
       padding: 5px;
       background-color: #2792adff;
       border: none;
       position: relative;
-      top: 50px;
+      top: 40px;
       transition: 500ms ease-in-out all;
       border-radius: 5px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;

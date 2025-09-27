@@ -11,7 +11,7 @@ export const Container = styled.form`
     font-size: 20px;
     width: 350px;
     border: 1px solid black;
-    color: red;
+    color: black;
     font-size: 20px;
     height: 40px;
     text-align: center;
@@ -25,10 +25,16 @@ export const Container = styled.form`
     outline: none;
   }
 
-  canvas {
+  .form-buttons button {
+    margin: 1px;
+  }
+
+  .render-qr-code {
     width: 50%;
-    height: 50%;
+    height: 125px;
     position: relative;
     top: 20px;
+    display: flex;
+    justify-content: center;
   }
 `;
