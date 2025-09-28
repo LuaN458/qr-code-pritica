@@ -8,12 +8,14 @@ export const Container = styled.section`
     box-shadow: 5px 5px 5px black;
     border-radius: 15px;
     display: flex;
-    align-self: center;
     justify-content: center;
-    
+    gap: 15px;
+
     h1 {
-        width: 5%;
-        font-size: 15px;
-        margin-bottom: 5px;
+      font-size: 15px;
+    }
+
+    body {
+      background-color: black;
     }
 `;

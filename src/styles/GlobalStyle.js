@@ -1,18 +1,19 @@
 import styled from "styled-components";
-import { secondaryColor } from './colors';
+
 
 
 const Container = styled.main`
     max-width: 30%;
     height: 500px;
     margin: 100px auto;
-    border: 2px pink solid;
+    border: 2px darkgreen solid;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 5px 5px 5px black;
+    background-color: #00ccffff;
 
     h2 {
       position: relative;
