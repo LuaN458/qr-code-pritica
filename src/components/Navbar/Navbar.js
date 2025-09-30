@@ -1,31 +1,45 @@
 import React from "react"
 import { Container } from "./styles";
 
-
-
 export default function NavBar() {
 
   const classN = 'body-bg-dark';
-   const [stateBtn, setStateBtn] = React.useState(false);
 
   const isActive = {
     active: false,
   }
 
   const handleClick = (e) => {
-    const bodyBg = document.querySelector("body");
 
-    if(bodyBg.classList.contains(`.${classN}`)) {
+    const bodyBg = document.querySelector("body");
+    const btn = document.querySelector(".btn-dark");
+
+    if (bodyBg.classList.contains(`.${classN}`)) {
       bodyBg.classList.remove(classN);
     }
-    if (isActive.active) bodyBg.classList.remove(classN);
+    if (isActive.active) {
+      bodyBg.classList.remove(classN);
+      btn.textContent = "Escurecer";
+    }
 
-    if (!isActive.active) bodyBg.classList.add(classN);
+    if (!isActive.active) {
+      bodyBg.classList.add(classN);
+      btn.textContent = "Clarear";
+    }
 
     isActive.active = !isActive.active;
-
-    setStateBtn(isActive.active);
   }
+
+  React.useEffect(() => {
+    const bodyBg = document.querySelector("body");
+    const btn = document.querySelector(".btn-dark");
+
+    if(bodyBg.classList.contains(classN)) {
+      btn.textContent = "Clarear";
+    }
+
+    btn.textContent = "Escurecer";
+  }, []);
 
   return (
     <Container>
@@ -33,7 +47,7 @@ export default function NavBar() {
         HOME
       </h1>
 
-      <button type="button" onClick={e => handleClick(e)} className='btn-dark'>{stateBtn ? "Clarear" : "Escurecer"}</button>
+      <button type="button" onClick={e => handleClick(e)} className='btn-dark'></button>
 
     </Container>
   );
