@@ -33,7 +33,7 @@ export const Container = styled.form`
     width: 50%;
     height: 125px;
     position: relative;
-    top: 20px;
+    top: 50px;
     display: flex;
     justify-content: center;
   }
