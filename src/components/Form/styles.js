@@ -12,7 +12,7 @@ export const Container = styled.form`
     width: 350px;
     border: 1px solid black;
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     height: 40px;
     text-align: center;
     border-radius: 5px;
@@ -21,7 +21,7 @@ export const Container = styled.form`
 
   input:focus {
     border-radius: 5px;
-    border: 1px solid red;
+    border: 1px solid yellow;
     outline: none;
   }
 

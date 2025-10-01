@@ -19,13 +19,13 @@ export default function NavBar() {
 
     if (isActive.active) {
       bodyBg.classList.remove(classN);
-      btn.textContent = "Escurecer";
+      btn.textContent = "☾";
       checkClass.name = false;
     }
 
     if (!isActive.active) {
       bodyBg.classList.add(classN);
-      btn.textContent = "Clarear";
+      btn.textContent = "☼";
       checkClass.name = true;
     }
 
@@ -42,7 +42,7 @@ export default function NavBar() {
     const btn = document.querySelector(".btn-dark");
 
     if (bodyBg.classList.contains(classN)) {
-      btn.textContent = "Clarear";
+      btn.textContent = "☼";
     }
 
     const classObj = localStorage.getItem('classObj');
@@ -53,10 +53,10 @@ export default function NavBar() {
 
     if (name) {
       bodyBg.classList.add(classN);
-      btn.textContent = "Clarear";
+      btn.textContent = "☼";
       isActive.active = !isActive.active;
     } else {
-      btn.textContent = "Escurecer";
+      btn.textContent = "☾";
     }
 
   }, [isActive]);
