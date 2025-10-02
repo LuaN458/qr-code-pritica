@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.main`
-    max-width: 25%;
+    max-width: 23%;
     height: 550px;
     margin: 100px auto;
     border: 2px #000000ff solid;
@@ -11,7 +11,7 @@ const Container = styled.main`
     justify-content: center;
     align-items: center;
     box-shadow: 5px 5px 5px black;
-    background-color: #888a8bff;
+    background-color: #04ac9eff;
 
     h2 {
       position: relative;
@@ -42,6 +42,7 @@ const Container = styled.main`
       border-radius: 5px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       color: white;
+      cursor: pointer;
     }
 
     button:hover {

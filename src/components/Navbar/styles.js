@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import {primaryColor} from '../../styles/colors';
+
 
 export const Container = styled.section`
     max-width: 50%;
-    height:  40px;
+    height: 40px;
     background-color: #c5b4b4ff;
     margin: 10px  auto;
     box-shadow: 5px 5px 5px black;
@@ -13,17 +13,26 @@ export const Container = styled.section`
     gap: 15px;
 
     h1 {
-      font-size: 15px;
+      font-size: 30px;
       text-align: center;
       position: relative;
-      left: 10px;
+      bottom: 15px;
+      left: 8px;
     }
 
     button {
       width: 30px;
-      height: 55%;
-      align-self: center;
+      height: 85%;
+      align-items: center;
       position: relative;
       right: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #70787aff;
+      color: white;
+      font-size: 20px;
+      margin-top: 3px;
+      padding-bottom: 4px;
+      cursor: pointer;
     }
 `;

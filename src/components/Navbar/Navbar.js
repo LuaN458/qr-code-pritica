@@ -1,9 +1,14 @@
 import React from "react"
 import { Container } from "./styles";
+import { AiFillHome, AiFillSun  } from "react-icons/ai";
+
+
 
 export default function NavBar() {
 
   const classN = 'body-bg-dark';
+
+  console.log()
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const isActive = {
@@ -61,10 +66,11 @@ export default function NavBar() {
 
   }, [isActive]);
 
+
   return (
     <Container>
       <h1>
-        HOME
+        <AiFillHome />
       </h1>
       <button type="button" onClick={e => handleClick(e)} className='btn-dark'></button>
     </Container>
